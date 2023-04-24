@@ -41,7 +41,12 @@ public class practica {
         }
 
         Iterator<String> it2 = equipo1.getPosicionesEnLigas().keySet().iterator();
-        System.out.println("El equipo " + equipo1.getNombreEquipo() + " tiene ganados: " + equipo1.getPosicionesEnLigas());
+
+        while (it2.hasNext()){
+            String key = it2.next();
+            System.out.println("Del campeonato " + key + ", " + equipo1.nombreEquipo + " tiene ganados: " + equipo1.getPosicionesEnLigas().get(key));
+        }
+
 
 
 
