@@ -17,9 +17,9 @@ public class Main {
         System.out.println("pos delantero: " + delantero.ordinal());
         System.out.println("pos portero: " + portero.ordinal());
 
-        //compare to compara la diferencia entre ambos índices,
+        //compareTo compara la diferencia entre ambos índices,
         //siendo el inicial, el que está como argumento
-        System.out.println("defensa a portero: " + delantero.compareTo(portero));
+        System.out.println("delantero a portero: " + delantero.compareTo(portero));
 
         System.out.println(Demarcacion.values().toString());
 

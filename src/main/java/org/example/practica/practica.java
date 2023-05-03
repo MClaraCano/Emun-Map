@@ -10,12 +10,13 @@ import java.util.Map;
 public class practica {
     public static void main(String[] args) {
 
-        //creamos el map de posicionesEnLigas
+        //creamos el map de posicionesEnLigas (lo necesitamos para crear el Equipo, ya que es un argumento)
         Map<String, Integer> posicionesEnLigas = new HashMap<>();
         posicionesEnLigas.put("LFP", 2);
         posicionesEnLigas.put("Copa Sudamericana", 1);
         posicionesEnLigas.put("Copa Libertadores", 3);
 
+        //Creamos el Equipo
         Equipo equipo1 = new Equipo(Club.RIVER, posicionesEnLigas);
 
         //creamos los jugadores
@@ -30,7 +31,7 @@ public class practica {
         equipo1.agregarJugador(jugador3);
         equipo1.agregarJugador(jugador4);
 
-        System.out.println("Los jugadores del: " + equipo1.getNombreEquipo() +" fueron:");
+        System.out.println("Los jugadores de " + equipo1.getNombreEquipo() +" fueron:");
 
         Iterator<Integer> it = equipo1.getJugadores().keySet().iterator();
 
